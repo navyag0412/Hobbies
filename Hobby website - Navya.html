@@ -1,0 +1,122 @@
+<html>
+<body>
+<marquee scrollamount="10"> <b><font color="orange" size="5"> My Hobbies </marquee></b>
+<center><b><font color="Crimson" size="80"> My Hobbies </center></b>
+<p>
+<b><font color="DarkBlue" size="5">Click <em>on the</em> buttons below <em>to</em> see some <em>of</em> my hobbies<em>⬇</em> </b>
+<body background="Sports 2.jpg"
+ </body>
+<style>
+#DEMO1
+{
+border:3px solid red;
+padding:50px;
+margin:50px;
+}
+img
+{
+border:4px;
+float:right;
+height:190px;
+width:195px;
+}
+</style>
+</head>
+<BODY>
+<img src="Hobbies 2.png" id="image">
+<center>
+<button onclick="document.getElementById('image').src='basketball.jpg'">
+<font color="black" size="4">  <b>Basketball</b></button>
+<button onclick="document.getElementById('image').src='badminton.jpg'"> <font color="black" size="4"> <b>Badminton</b></button>
+<button onclick="document.getElementById('image').src='Books.jpg'"> <font color="black" size="4"> <b>Reading Books</b></button>
+<button onclick="document.getElementById('image').src='Drawing.jpg'"> <font color="black" size=4"> <b>Drawing</b></button>
+<button onclick="document.getElementById('image').src='Studying.jpg'"> <font color="black" size="4"> <b>Studying</b></button>
+</center>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #433;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: darkgrey;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+
+<button class="accordion"><b>Badminton 🎾</b></button>
+<div class="panel">
+  <p>Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.</p>
+</div>
+<button class="accordion"><b>Basketball 🏀</b></button>
+<div class="panel">
+  <p>Basketball is a team sport where two teams, usually consisting of five players on each team, play against each other on a rectangular court. The objective is to get the ball through a hoop mounted high on a backboard on the opponent's side of the court.</p>
+</div>
+
+<button class="accordion"><b>Reading 📚</b></button>
+<div class="panel">
+  <p>Reading is a process of understanding information represented by printed or written language. It is a way of getting information and insights about something that is written.</b> </p>
+</div>
+<button class="accordion"><b>Drawing 🖋</b></button>
+<div class="panel">
+  <p>Drawing is a way of making a picture. Drawings are created by making lines on a surface.</b> </p>
+</div>
+<button class="accordion"><b>Studying 📖</b></button>
+<div class="panel">
+  <p>Studying means learning something new. </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<br> </br>
+<b><font color="Indigo" face="algerian" size="4"> Made by Navya Gulati 7-C </font></b>
+</body>
+</html>
